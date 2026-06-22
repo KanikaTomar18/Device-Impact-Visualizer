@@ -63,6 +63,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%; /* full-width tap target works well at every size */
 }
 
 button:hover {
@@ -70,13 +71,55 @@ button:hover {
   transform: translateY(-2px);
 }
 
-/* Responsive Adjustments */
+/* ===========================================================
+   RESPONSIVE BREAKPOINTS
+   (Only spacing/sizing — colors, gradients, and fonts untouched)
+   =========================================================== */
+
+/* Tablets and small laptops */
+@media (max-width: 900px) {
+  body {
+    padding: 30px;
+  }
+}
+
+/* Phones / small tablets */
 @media (max-width: 640px) {
+  body {
+    padding: 20px;
+  }
+
   .container {
     padding: 20px;
   }
 
   h1 {
     font-size: 1.6em;
+  }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+  body {
+    padding: 12px;
+  }
+
+  .container {
+    padding: 16px 14px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  input, select {
+    padding: 10px 12px;
+    margin-bottom: 14px;
+  }
+
+  button {
+    padding: 12px;
   }
 }
