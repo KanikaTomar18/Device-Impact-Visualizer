@@ -42,9 +42,9 @@ This project helps users understand the environmental impact of using electronic
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/device-usage-impact-visualizer.git
+git clone https://github.com/KanikaTomar18//Device-Impact-Visualizer.git
 
-cd device-usage-impact-visualizer
+cd Device-Impact-Visualizer
 
 pip install -r requirements.txt
 
